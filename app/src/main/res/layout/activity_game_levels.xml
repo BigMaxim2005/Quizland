@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/im_back_universal"
+    tools:context=".GameLevelsActivity">
+
+
+    <GridLayout
+        android:id="@+id/grid_levels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/tv_level_1"
+            style="@style/levels_tv_style"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:text="@string/_1" />
+
+        <TextView
+            android:id="@+id/tv_level_2"
+            style="@style/levels_tv_style"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:text="@string/_2" />
+
+        <TextView
+            style="@style/levels_tv_style"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:text="3" />
+
+        <TextView
+            style="@style/levels_tv_style"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:text="4" />
+
+        <TextView
+            style="@style/levels_tv_style"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:text="5" />
+
+        <TextView
+            style="@style/levels_tv_style"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:text="6" />
+
+        <TextView
+            style="@style/levels_tv_style"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_rowWeight="1"
+            android:layout_column="2"
+            android:text="7" />
+
+        <TextView
+            style="@style/levels_tv_style"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_rowWeight="1"
+            android:layout_column="3"
+            android:text="8" />
+
+        <TextView
+            style="@style/levels_tv_style"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:text="9" />
+
+        <TextView
+            style="@style/levels_tv_style"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:text="10" />
+
+
+    </GridLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_back"
+        style="@style/my_button_style"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="@string/back"
+        app:layout_constraintEnd_toEndOf="@+id/grid_levels"
+        app:layout_constraintTop_toBottomOf="@+id/grid_levels" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
